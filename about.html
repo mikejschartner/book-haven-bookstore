@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-section">
+        <img src="images/logo.png" alt="Book Haven Bookstore Logo" class="logo">
+        <h1>Book Haven Bookstore</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="about-section">
+    <h2>About Our Store</h2>
+    <p>
+        Book Haven Bookstore was created to bring readers together in a welcoming and
+        relaxing environment. We focus on creating a local bookstore experience that helps
+        customers discover books they enjoy while supporting the local community.
+    </p>
+</section>
+
+<section class="form-section">
+    <h2>Contact Us / Custom Order</h2>
+
+    <form id="contactForm">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="book">Requested Book:</label>
+        <input type="text" id="book" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>Subscribe for updates and events.</p>
+    <button onclick="subscribeAlert()">Subscribe</button>
+    <p>&copy; 2026 Book Haven Bookstore</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
