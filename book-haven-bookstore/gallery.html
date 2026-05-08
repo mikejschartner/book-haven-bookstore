@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-section">
+        <img src="images/logo.png" alt="Book Haven Bookstore Logo" class="logo">
+
+        <h1>Book Haven Bookstore</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <h2>Book Haven Gallery</h2>
+
+    <p>
+        Browse our featured books, magazines, and bookstore products.
+    </p>
+</section>
+
+<section class="gallery-grid">
+
+    <div class="gallery-card">
+        <img src="images/Client3_Book1.png" alt="Brie Mine 4Ever Book">
+
+        <h3>Brie Mine 4Ever</h3>
+
+        <p>Book for cheese lovers</p>
+
+        <button onclick="addToCart('Brie Mine 4Ever')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/Client3_Book2.png" alt="Glory Riders Book">
+
+        <h3>Glory Riders</h3>
+
+        <p>Book about bikers</p>
+
+        <button onclick="addToCart('Glory Riders')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/Client3_Book3.png" alt="Sorcerer's Shadowed Chronicles Book">
+
+        <h3>Sorcerer’s Shadowed Chronicles</h3>
+
+        <p>Fantasy adventure book</p>
+
+        <button onclick="addToCart('Sorcerer’s Shadowed Chronicles')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/Client3_Magazine1.png" alt="Ball Magazine">
+
+        <h3>Ball Magazine</h3>
+
+        <p>Magazine about pickleball</p>
+
+        <button onclick="addToCart('Ball Magazine')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/Client3_Magazine2.png" alt="Travel Magazine">
+
+        <h3>Travel Magazine</h3>
+
+        <p>Magazine for travelers</p>
+
+        <button onclick="addToCart('Travel Magazine')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/Client3_Magazine3.png" alt="Eat Magazine">
+
+        <h3>Eat Magazine</h3>
+
+        <p>Magazine for food lovers</p>
+
+        <button onclick="addToCart('Eat Magazine')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/Client3_ToteBag.png" alt="Book Haven Tote Bag">
+
+        <h3>Book Haven Tote Bag</h3>
+
+        <p>ALL I DO IS READ READ READ tote bag</p>
+
+        <button onclick="addToCart('Book Haven Tote Bag')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/Client3_Notebook.png" alt="Book Haven Notebook">
+
+        <h3>Book Haven Notebook</h3>
+
+        <p>Official bookstore notebook</p>
+
+        <button onclick="addToCart('Book Haven Notebook')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/Client3_Stickers.png" alt="Book Haven Stickers">
+
+        <h3>Book Haven Stickers</h3>
+
+        <p>Sticker set promoting reading</p>
+
+        <button onclick="addToCart('Book Haven Stickers')">
+            Add to Cart
+        </button>
+    </div>
+
+</section>
+
+<div class="cart-buttons">
+
+    <button onclick="viewCart()">
+        View Cart
+    </button>
+
+    <button onclick="clearCart()">
+        Clear Cart
+    </button>
+
+    <button onclick="processOrder()">
+        Process Order
+    </button>
+
+</div>
+
+<div id="cartModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeCart()">
+            &times;
+        </span>
+
+        <h2>Shopping Cart</h2>
+
+        <div id="cartItems"></div>
+
+    </div>
+
+</div>
+
+</main>
+
+<footer>
+
+    <p>
+        Subscribe for updates and bookstore events.
+    </p>
+
+    <button onclick="subscribeAlert()">
+        Subscribe
+    </button>
+
+    <p>
+        &copy; 2026 Book Haven Bookstore
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
